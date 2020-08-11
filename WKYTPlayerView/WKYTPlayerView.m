@@ -549,7 +549,7 @@ NSString static *const kWKYTPlayerSyndicationRegexPattern = @"^https://tpc.googl
                 NSMutableArray *levels = [[NSMutableArray alloc] init];
                 for (NSString *rawQualityValue in rawQualityValues) {
                     WKYTPlaybackQuality quality = [WKYTPlayerView playbackQualityForString:rawQualityValue];
-                    [levels addObject:[NSNumber numberWithInt:quality]];
+                    [levels addObject:[NSNumber numberWithInteger:quality]];
                 }
 
                 completionHandler(levels, nil);
